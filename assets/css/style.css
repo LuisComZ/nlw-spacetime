@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;400;500;600;700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@600&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #121215;
+  color: #eaeaea;
+}
+
+nav {
+  padding: 64px;
+}
+
+.memory {
+  margin-bottom: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  text-decoration: none;
+}
+
+.memory small {
+  font-size: 12px;
+  color: #bebebf;
+}
+
+.memory h1 {
+  font-size: 32px;
+  color: #eaeaea;
+}
+
+.memory img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover; /* mantém a imagem proporcional */
+  border-radius: 8px;
+}
+
+.memory p {
+  font-size: 18px;
+  color: #bebebf;
+  line-height: 28px; /* distância entre as linhas */
+}
