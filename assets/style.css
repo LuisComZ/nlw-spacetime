@@ -160,26 +160,50 @@ aside span {
     font-size: 12px;
   }
 
+  @keyframes entering_left {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes entering_right {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.8fr;
-    grid-template-areas: 
-    "profile"
-    "timeline";
+    grid-template-areas:
+      "profile"
+      "timeline";
   }
 
   nav {
     padding: 22px;
     overflow-y: visible;
-    animation: none;
+    animation: entering_left 1.5s ease-in-out;
   }
 
   aside {
     padding: 32px 12px;
     border-right: none;
-  } 
+  }
 
   aside * {
-    animation: none;
+    animation: entering_right 1.5s ease-in-out;
   }
 }
